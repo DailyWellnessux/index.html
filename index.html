@@ -2,74 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Daily Wellness Report</title>
+  <title>Mitolyn – Daily Wellness Report</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
-      background-color: #f1f4f7;
-      font-family: Arial, Helvetica, sans-serif;
       margin: 0;
-      padding: 0;
-      color: #1f2937;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #0b63ce, #12b3a8);
+      color: #ffffff;
     }
 
     .container {
-      max-width: 780px;
-      margin: 30px auto;
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
 
-    .top-bar {
-      font-size: 13px;
-      color: #6b7280;
-      margin-bottom: 12px;
+    .card {
+      background: #ffffff;
+      color: #333;
+      border-radius: 10px;
+      padding: 35px;
+      margin-top: 30px;
+    }
+
+    .small-header {
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      font-size: 13px;
+      letter-spacing: 1px;
+      opacity: 0.85;
+      margin-bottom: 10px;
     }
 
     h1 {
-      font-size: 28px;
-      line-height: 1.35;
-      margin-bottom: 20px;
-      color: #111827;
+      font-size: 34px;
+      line-height: 1.25;
+      margin: 10px 0 25px;
     }
 
-    .subheadline {
-      font-size: 18px;
-      color: #374151;
-      margin-bottom: 25px;
+    h2 {
+      font-size: 26px;
+      margin: 35px 0 15px;
+      color: #0b63ce;
     }
 
     p {
       font-size: 17px;
-      line-height: 1.7;
+      line-height: 1.65;
       margin-bottom: 18px;
     }
 
     .product-image {
       display: block;
-      max-width: 440px;
+      max-width: 420px;
       width: 100%;
       margin: 30px auto;
-      border-radius: 6px;
+      border-radius: 8px;
     }
 
-    .quote-box {
-      background: #f9fafb;
-      border-left: 4px solid #2563eb;
-      padding: 18px 20px;
+    .benefits-image {
+      display: block;
+      max-width: 700px;
+      width: 100%;
+      margin: 40px auto;
+      border-radius: 10px;
+    }
+
+    .highlight {
+      background: #f4f8ff;
+      border-left: 5px solid #0b63ce;
+      padding: 18px;
       margin: 25px 0;
-      font-style: italic;
-      color: #1f2937;
+      border-radius: 5px;
+      font-weight: bold;
     }
 
     .cta {
       display: block;
-      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      background: linear-gradient(90deg, #ff9800, #ff5722);
       color: #ffffff;
       text-align: center;
       text-decoration: none;
@@ -77,25 +88,29 @@
       border-radius: 6px;
       font-size: 18px;
       font-weight: bold;
-      margin: 35px 0 20px 0;
+      margin: 35px 0;
     }
 
     .cta:hover {
       opacity: 0.9;
     }
 
-    .cta-note {
-      text-align: center;
-      font-size: 14px;
-      color: #6b7280;
-    }
-
     .footer {
       font-size: 12px;
-      color: #6b7280;
+      color: #777;
       border-top: 1px solid #e5e7eb;
-      padding-top: 15px;
-      margin-top: 30px;
+      padding-top: 20px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 26px;
+      }
+      h2 {
+        font-size: 22px;
+      }
     }
   </style>
 </head>
@@ -104,63 +119,72 @@
 
   <div class="container">
 
-    <div class="top-bar">Daily Wellness Report • Independent Review</div>
+    <div class="small-header">Daily Wellness • Research Update</div>
 
-    <h1>
-      A Natural Formula Is Gaining Attention for Its Role in Supporting Metabolic Health
-    </h1>
+    <h1>Why Thousands Are Talking About This New Daily Wellness Discovery</h1>
 
-    <div class="subheadline">
-      Researchers are examining how specific plant-based compounds may influence
-      energy, metabolism, and healthy weight support.
-    </div>
-
+    <!-- IMAGEM PRINCIPAL -->
     <img 
       src="mitolyn.png" 
       alt="Mitolyn Natural Supplement"
       class="product-image"
     >
 
-    <p>
-      For years, metabolic health has been associated with extreme diets, rigid
-      routines, and solutions that are difficult to maintain long-term.
-    </p>
+    <div class="card">
 
-    <p>
-      Recently, however, wellness researchers began focusing on naturally occurring
-      ingredients that work with the body rather than against it.
-    </p>
+      <p>
+        Wellness researchers are increasingly focusing on how natural ingredients
+        may support energy production at the cellular level — without extreme diets
+        or exhausting routines.
+      </p>
 
-    <div class="quote-box">
-      “What caught our attention was how these ingredients support the body's natural
-      metabolic processes without requiring drastic lifestyle changes.”
-    </div>
+      <p>
+        This approach is gaining attention because it aligns with how the body
+        naturally works, supporting daily metabolism and overall vitality.
+      </p>
 
-    <p>
-      This approach has sparked interest among adults looking for a more sustainable
-      way to support daily energy levels and metabolic balance.
-    </p>
+      <div class="highlight">
+        Instead of forcing the body, this method focuses on supporting natural
+        biological processes that already exist.
+      </div>
 
-    <p>
-      A detailed breakdown explains how this formula works, the ingredients involved,
-      and why so many people are talking about it right now.
-    </p>
+      <h2>Why This Discovery Is Getting So Much Attention</h2>
 
-    <a 
-      class="cta"
-      href="https://26e8e-c6vm6cftdjvo1cdgdq48.hop.clickbank.net"
-      target="_blank"
-      rel="noopener">
-      Click Here to See the Full Report
-    </a>
+      <p>
+        According to recent wellness discussions, maintaining healthy mitochondrial
+        function plays a key role in how the body converts nutrients into usable energy.
+      </p>
 
-    <div class="cta-note">
-      Access the official explanation while it is still available
-    </div>
+      <p>
+        That’s where Mitolyn stands out — it combines carefully selected plant-based
+        nutrients designed to support daily energy and metabolic balance.
+      </p>
 
-    <div class="footer">
-      This content is for informational purposes only and does not provide medical advice.
-      Individual results may vary.
+      <!-- SEGUNDA IMAGEM (BENEFÍCIOS / HERO) -->
+      <img
+        src="Mitolyn2.png"
+        alt="Mitolyn Supplement Bottles and Natural Ingredients"
+        class="benefits-image"
+      >
+
+      <p>
+        Unlike many trendy solutions, this formula was designed with simplicity,
+        consistency, and long-term wellness in mind.
+      </p>
+
+      <a
+        class="cta"
+        href="https://26e8e-c6vm6cftdjvo1cdgdq48.hop.clickbank.net"
+        target="_blank"
+      >
+        Visit The Official Mitolyn Presentation
+      </a>
+
+      <div class="footer">
+        This content is for informational purposes only and does not constitute medical advice.
+        Individual results may vary.
+      </div>
+
     </div>
 
   </div>
