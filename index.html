@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    /* RESET / BASE */
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -14,45 +15,46 @@
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 28px 16px;
     }
 
     .small-header {
       text-transform: uppercase;
-      font-size: 13px;
+      font-size: 12px;
       letter-spacing: 1px;
       opacity: 0.9;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     h1 {
-      font-size: 38px;
-      line-height: 1.2;
-      margin-bottom: 30px;
+      font-size: 30px;
+      line-height: 1.25;
+      margin-bottom: 20px;
     }
 
-    /* IMAGEM HERO (GRANDE) */
+    /* HERO IMAGE — MOBILE FIRST */
     .hero-image {
       display: block;
-      max-width: 720px;
       width: 100%;
-      margin: 30px auto 50px auto;
+      max-width: 100%;
+      margin: 20px auto 35px auto;
       border-radius: 14px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.25);
     }
 
+    /* CONTEÚDO */
     .content-box {
       background: #ffffff;
       color: #222;
-      border-radius: 16px;
-      padding: 40px;
-      margin-top: 40px;
+      border-radius: 18px;
+      padding: 28px 22px;
+      margin-top: 30px;
     }
 
     p {
-      font-size: 17px;
+      font-size: 16px;
       line-height: 1.7;
       margin-bottom: 18px;
     }
@@ -60,26 +62,28 @@
     .highlight {
       background: #f2f7ff;
       border-left: 5px solid #0b66c3;
-      padding: 18px 20px;
-      margin: 30px 0;
+      padding: 18px;
+      margin: 28px 0;
       font-weight: bold;
     }
 
     h2 {
       color: #0b66c3;
-      margin-top: 40px;
-      margin-bottom: 20px;
+      margin-top: 35px;
+      margin-bottom: 18px;
+      font-size: 24px;
     }
 
-    /* IMAGEM SECUNDÁRIA (MENOR) */
+    /* IMAGEM SECUNDÁRIA */
     .product-image {
       display: block;
-      max-width: 420px;
       width: 100%;
-      margin: 35px auto;
-      border-radius: 10px;
+      max-width: 420px;
+      margin: 30px auto;
+      border-radius: 12px;
     }
 
+    /* CTA */
     .cta {
       display: block;
       background: linear-gradient(90deg, #ff7a18, #ff9f1c);
@@ -87,17 +91,36 @@
       text-align: center;
       text-decoration: none;
       padding: 18px;
-      border-radius: 8px;
+      border-radius: 10px;
       font-size: 18px;
       font-weight: bold;
-      margin: 40px 0 10px 0;
+      margin: 35px 0 10px 0;
     }
 
     .footer {
       font-size: 12px;
       color: #666;
-      margin-top: 30px;
+      margin-top: 28px;
       text-align: center;
+    }
+
+    /* ===== DESKTOP AJUSTES ===== */
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 40px;
+      }
+
+      .hero-image {
+        max-width: 900px; /* IMAGEM BEM GRANDE NO DESKTOP */
+      }
+
+      .content-box {
+        padding: 45px;
+      }
+
+      p {
+        font-size: 17px;
+      }
     }
   </style>
 </head>
@@ -110,7 +133,7 @@
 
     <h1>Why Thousands Are Talking About This New Daily Wellness Discovery</h1>
 
-    <!-- IMAGEM HERO GRANDE -->
+    <!-- HERO IMAGE (GRANDE E LEGÍVEL) -->
     <img 
       src="Mitolyn2.png"
       alt="Mitolyn Wellness Discovery"
