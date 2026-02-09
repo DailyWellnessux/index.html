@@ -6,120 +6,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    /* RESET / BASE */
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, #0b66c3 0%, #0e7ad6 100%);
-      color: #ffffff;
+      background: linear-gradient(180deg, #0b3c6f 0%, #1e6fb9 100%);
+      color: #333;
     }
 
     .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 28px 16px;
+      max-width: 760px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .logo {
+      max-width: 160px;
+      margin-bottom: 15px;
     }
 
     .small-header {
-      text-transform: uppercase;
-      font-size: 12px;
-      letter-spacing: 1px;
-      opacity: 0.9;
-      margin-bottom: 12px;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
     }
 
     h1 {
-      font-size: 30px;
-      line-height: 1.25;
+      font-size: 26px;
+      line-height: 1.3;
       margin-bottom: 20px;
-    }
-
-    /* HERO IMAGE — MOBILE FIRST */
-    .hero-image {
-      display: block;
-      width: 100%;
-      max-width: 100%;
-      margin: 20px auto 35px auto;
-      border-radius: 14px;
-      box-shadow: 0 18px 40px rgba(0,0,0,0.25);
-    }
-
-    /* CONTEÚDO */
-    .content-box {
-      background: #ffffff;
-      color: #222;
-      border-radius: 18px;
-      padding: 28px 22px;
-      margin-top: 30px;
     }
 
     p {
       font-size: 16px;
-      line-height: 1.7;
+      line-height: 1.6;
       margin-bottom: 18px;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 620px;
+      display: block;
+      margin: 25px auto;
+      border-radius: 10px;
     }
 
     .highlight {
-      background: #f2f7ff;
-      border-left: 5px solid #0b66c3;
-      padding: 18px;
-      margin: 28px 0;
-      font-weight: bold;
+      background: #f9fafb;
+      border-left: 4px solid #2b6cb0;
+      padding: 15px;
+      margin: 25px 0;
     }
 
-    h2 {
-      color: #0b66c3;
-      margin-top: 35px;
-      margin-bottom: 18px;
-      font-size: 24px;
-    }
-
-    /* IMAGEM SECUNDÁRIA */
-    .product-image {
+    .testimonial {
+      width: 100%;
+      max-width: 520px;
       display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+    }
+
+    .product-image {
       width: 100%;
       max-width: 420px;
+      display: block;
       margin: 30px auto;
-      border-radius: 12px;
+      border-radius: 8px;
     }
 
-    /* CTA */
     .cta {
       display: block;
-      background: linear-gradient(90deg, #ff7a18, #ff9f1c);
+      background: #f97316;
       color: #ffffff;
       text-align: center;
       text-decoration: none;
-      padding: 18px;
-      border-radius: 10px;
-      font-size: 18px;
+      padding: 16px;
+      border-radius: 6px;
       font-weight: bold;
-      margin: 35px 0 10px 0;
+      font-size: 17px;
+      margin: 30px 0;
     }
 
     .footer {
       font-size: 12px;
-      color: #666;
-      margin-top: 28px;
+      color: #777;
+      border-top: 1px solid #e5e7eb;
+      padding-top: 15px;
       text-align: center;
     }
 
-    /* ===== DESKTOP AJUSTES ===== */
-    @media (min-width: 768px) {
+    /* Mobile First */
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px 12px;
+        padding: 20px;
+      }
+
       h1 {
-        font-size: 40px;
-      }
-
-      .hero-image {
-        max-width: 900px; /* IMAGEM BEM GRANDE NO DESKTOP */
-      }
-
-      .content-box {
-        padding: 45px;
+        font-size: 22px;
       }
 
       p {
-        font-size: 17px;
+        font-size: 16px;
       }
     }
   </style>
@@ -129,69 +119,71 @@
 
   <div class="container">
 
+    <!-- LOGO -->
+    <img src="MitolynLogo.png" alt="Mitolyn Logo" class="logo">
+
     <div class="small-header">Daily Wellness • Research Update</div>
 
-    <h1>Why Thousands Are Talking About This New Daily Wellness Discovery</h1>
+    <h1>Researchers Are Exploring Natural Ingredients That Support Metabolism</h1>
 
-    <!-- HERO IMAGE (GRANDE E LEGÍVEL) -->
+    <!-- HERO IMAGE -->
     <img 
-      src="Mitolyn2.png"
-      alt="Mitolyn Wellness Discovery"
+      src="Mitolyn2.png" 
+      alt="Mitolyn Metabolism Support"
       class="hero-image"
     >
 
-    <div class="content-box">
+    <p>
+      Wellness researchers are exploring how specific plant-based compounds may help
+      support mitochondrial function — a key factor in how the body produces and uses energy.
+    </p>
 
-      <p>
-        Wellness researchers are increasingly focusing on how natural ingredients
-        may support energy production at the cellular level — without extreme diets
-        or exhausting routines.
-      </p>
+    <p>
+      Instead of extreme diets or aggressive routines, this approach focuses on supporting
+      the body through a simple daily habit that fits naturally into everyday life.
+    </p>
 
-      <p>
-        This approach is gaining attention because it aligns with how the body
-        naturally works, supporting daily metabolism and overall vitality.
-      </p>
+    <div class="highlight">
+      Many people are now learning how these ingredients may support consistent energy,
+      metabolic balance, and long-term wellness goals.
+    </div>
 
-      <div class="highlight">
-        Instead of forcing the body, this method focuses on supporting natural
-        biological processes that already exist.
-      </div>
+    <p>
+      Researchers are exploring how specific plant-based compounds may help support
+      mitochondrial function — a key factor in how the body produces and uses energy.
+    </p>
 
-      <h2>Why This Discovery Is Getting So Much Attention</h2>
+    <p>
+      Many people are now learning more about how these ingredients fit into a simple
+      daily routine that supports long-term wellness goals.
+    </p>
 
-      <p>
-        Researchers are exploring how specific plant-based compounds may help
-        support mitochondrial function — a key factor in how the body produces
-        and uses energy.
-      </p>
+    <!-- TESTIMONIALS -->
+    <img src="Depoimento1.png" alt="Customer Testimonial 1" class="testimonial">
+    <img src="Depoimento2.png" alt="Customer Testimonial 2" class="testimonial">
 
-      <!-- IMAGEM SECUNDÁRIA -->
-      <img 
-        src="mitolyn.png"
-        alt="Mitolyn Supplement Bottle"
-        class="product-image"
-      >
+    <!-- PRODUCT IMAGE -->
+    <img 
+      src="mitolyn.png" 
+      alt="Mitolyn Supplement"
+      class="product-image"
+    >
 
-      <p>
-        Many people are now learning more about how these ingredients fit into a
-        simple daily routine that supports long-term wellness goals.
-      </p>
+    <!-- CTA -->
+    <a 
+      class="cta" 
+      href="https://26e8e-c6vm6cftdjvo1cdgdq48.hop.clickbank.net"
+      target="_blank">
+      Read the Full Explanation on the Official Website
+    </a>
 
-      <a 
-        class="cta" 
-        href="https://26e8e-c6vm6cftdjvo1cdgdq48.hop.clickbank.net"
-        target="_blank">
-        Read the Full Explanation on the Official Website
-      </a>
-
-      <div class="footer">
-        This content is for informational purposes only and does not provide medical advice.
-      </div>
-
+    <div class="footer">
+      This content is for informational purposes only and does not provide medical advice.
     </div>
 
   </div>
 
 </body>
 </html>
+
+		
